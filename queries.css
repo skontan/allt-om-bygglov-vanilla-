@@ -1,9 +1,6 @@
 /* Big tablets to 1200px: from 1024px to 1200px (widths smaller than the 1140px row */
 @media only screen and (max-width: 1200px) {
-  .row {
-    padding: 0 2%;
-  }
-
+  /* HEADER */
   .header-content {
     margin: 10% auto 0 auto;
   }
@@ -27,17 +24,30 @@
     font-size: 3.5vh;
   }
 
-  .my-col,
+  /* FRÅGA OSS */
+
   .contact-form {
     width: 50%;
   }
 
+  /* MISC */
   #clear-div {
     display: block;
   }
 
+  /* FAQ */
   .question-box {
     width: 60%;
+  }
+
+  /* VIDEO */
+  .video-box {
+    width: 70%;
+  }
+
+  /* OM OSS */
+  .left-person img {
+    width: 70%;
   }
 }
 
@@ -46,6 +56,12 @@
   body {
     /* font-size: 18px; */
   }
+
+  section {
+    padding: 60px 0;
+  }
+
+  /* HEADER */
 
   .header-content {
     margin: 17% auto 0 auto;
@@ -68,21 +84,15 @@
     margin-bottom: 3em;
   }
 
-  section {
-    padding: 60px 0;
-  }
-
-  .contact-form {
-    width: 70%;
-  }
-
   .img-box {
     display: none;
   }
 
-  .my-col {
-    padding: 0 1%;
+  .box {
+    font-size: 3vh;
   }
+
+  /* OM OSS */
 
   .section-om .my-col:first-child {
     display: none;
@@ -91,6 +101,13 @@
   .section-om .my-col {
     width: 90%;
   }
+
+  /* FRÅGA OSS */
+  .contact-form {
+    width: 70%;
+  }
+
+  /* FAQ */
 
   .question-box {
     width: 70%;
@@ -106,25 +123,47 @@
     padding: 30px 0;
   }
 
-  .row {
-    padding: 0 4%;
-  }
+  /* HEADER */
 
   .header-content {
-    margin: 15% auto 0 auto;
+    margin: 20% auto 0 auto;
   }
 
   .header-text {
     width: 100%;
   }
 
+  .header-text h1 {
+    margin-bottom: 0.3em;
+    font-size: 150%;
+  }
+
+  .header-text p {
+    margin-bottom: 1.5em;
+  }
+
   .header-text a {
     padding: 5px 20px;
   }
 
+  .box-holder {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   .box {
     font-size: 3vh;
+    width: 40%;
   }
+
+  .box-arrow:nth-child(4) {
+    display: none;
+  }
+
+  .logo {
+    margin: 10px;
+  }
+
+  /* MISC */
 
   h1 {
     font-size: 180%;
@@ -133,34 +172,34 @@
     font-size: 150%;
   }
 
-  .logo {
-    margin: 10px;
+  /* HUR */
+
+  .section-hur .my-row {
+    flex-direction: column;
   }
 
-  .my-row:nth-child(2),
-  .my-row:nth-child(4) {
+  .section-hur .my-row:nth-child(2),
+  .section-hur .my-row:nth-child(4) {
     flex-direction: column-reverse;
   }
 
-  .my-row {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+  .hur-box {
+    width: 80%;
   }
 
-  .my-col {
-    width: 90%;
-    padding: 3% 1%;
-  }
+  /* FRÅGA OSS */
 
   .contact-form {
     width: 90%;
   }
 
+  /* VIDEO */
+
   .video-box {
-    width: 100%;
+    width: 90%;
   }
+
+  /* FAQ */
 
   .question-box {
     width: 80%;
@@ -170,9 +209,55 @@
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
   section {
-    padding: 25px 0;
+    padding: 4 0px 0;
   }
+
+  body {
+    font-size: 18px;
+  }
+
+  .section-title {
+    padding: 0;
+  }
+
+  .title-info {
+    width: 80%;
+  }
+
+  /* HEADER */
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin: 20px 10px;
+  }
+
+  .main-nav h2 {
+    font-size: 120%;
+    margin: 22px 0;
+  }
+
+  .header-content {
+    margin: 25% auto 0 auto;
+  }
+
+  .header-text h1 {
+    font-size: 120%;
+  }
+
+  .box {
+    font-size: 120%;
+  }
+
+  .box p {
+    font-size: 70%;
+  }
+
+  .big-icon {
+    font-size: 270%;
+  }
+
+  /* FRÅGA OSS */
   .contact-form {
-    width: 100%;
+    width: 90%;
   }
 }
