@@ -4,7 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="grid.css" />
     <link
@@ -25,15 +28,13 @@
   <body>
     <!-- HEADER -->
     <header id="hem">
-      <nav id="main-nav" class="main-nav">
-        <div class="logo"><img src="logo.png" alt="Logo" /></div>
+      <nav id="main-nav" class="main-nav my-row">
+        <div class="logo"><img src="logo.JPG" alt="Logo" /></div>
 
         <h2>Allt om Bygglov</h2>
 
         <ion-icon id="menu-btn" class="menu-btn" name="menu"></ion-icon>
         <ion-icon id="menu-close" class="menu-close" name="close"></ion-icon>
-
-        <div id="clear-div" class="clearfix"></div>
 
         <ul>
           <li><a id="nav-hem" href="#hem">Hem</a></li>
@@ -45,71 +46,62 @@
       </nav>
 
       <div class="clearfix"></div>
+      <div class="header-main my-row">
+        <div class="header-content my-row">
+          <div class="header-text my-col">
+            <h1>Vi hjälper dig med allt som gäller bygglovsfrågor</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              a metus magna. Nam imperdiet orci ultrices lectus commodo, nec
+              finibus erat feugiat.
+            </p>
+            <div class="my-col button-holder">
+              <a href="#form">Skriv din fråga</a>
+              <a href="#hur">Mer info</a>
+            </div>
+          </div>
 
-      <div class="header-content">
-        <div class="header-text">
-          <h1>Vi hjälper dig med allt som gäller bygglovsfrågor</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
-            metus magna. Nam imperdiet orci ultrices lectus commodo, nec finibus
-            erat feugiat.
-          </p>
-          <a href="#form">Skriv din fråga</a>
-          <a href="#hur">Mer info</a>
+          <div class="img-box my-col">
+            <img class="header-slide" src="slideshow/dplan.PNG" alt="Dplan" />
+            <img class="header-slide" src="slideshow/betong.jpg" alt="betong" />
+            <img class="header-slide" src="slideshow/plan.jpg" alt="plan" />
+            <img class="header-slide" src="slideshow/1.JPG" alt="1" />
+            <img class="header-slide" src="slideshow/2.JPG" alt="2" />
+            <img class="header-slide" src="slideshow/3.JPG" alt="3" />
+            <img class="header-slide" src="slideshow/4.JPG" alt="4" />
+            <img class="header-slide" src="slideshow/5.JPG" alt="5" />
+            <img class="header-slide" src="slideshow/6.JPG" alt="6" />
+            <img class="header-slide" src="slideshow/7.JPG" alt="7" />
+            <img class="header-slide" src="slideshow/8.jpg" alt="8" />
+          </div>
         </div>
 
-        <div class="img-box">
-          <img class="header-slide" src="slideshow/dplan.PNG" alt="Dplan" />
-          <img class="header-slide" src="slideshow/betong.jpg" alt="betong" />
-          <img class="header-slide" src="slideshow/plan.jpg" alt="plan" />
-          <img class="header-slide" src="slideshow/1.JPG" alt="1" />
-          <img class="header-slide" src="slideshow/2.JPG" alt="2" />
-          <img class="header-slide" src="slideshow/3.JPG" alt="3" />
-          <img class="header-slide" src="slideshow/4.JPG" alt="4" />
-          <img class="header-slide" src="slideshow/5.JPG" alt="5" />
-          <img class="header-slide" src="slideshow/6.JPG" alt="6" />
-          <img class="header-slide" src="slideshow/7.JPG" alt="7" />
-          <img class="header-slide" src="slideshow/8.jpg" alt="8" />
-        </div>
-      </div>
+        <div class="clearfix"></div>
 
-      <div class="clearfix"></div>
+        <div class="my-row box-holder">
+          <div class="my-col box">
+            <ion-icon name="document" class="big-icon"></ion-icon>
+            <h4>1. Skriv din fråga</h4>
+            <p>Fyll i formuläret</p>
+          </div>
 
-      <div class="my-row box-holder">
-        <div class="my-col box">
-          <ion-icon name="document" class="big-icon"></ion-icon>
-          <h4>Skriv din fråga</h4>
-          <p>Fyll i formuläret</p>
-        </div>
+          <div class="my-col box">
+            <ion-icon name="chatboxes" class="big-icon"></ion-icon>
+            <h4>2. Offert</h4>
+            <p>Du får offert mailad</p>
+          </div>
 
-        <div class="my-col box-arrow">
-          <p>></p>
-        </div>
+          <div class="my-col box">
+            <ion-icon name="people" class="big-icon"></ion-icon>
+            <h4>3. Möte</h4>
+            <p>Vi träffas för rådgivning</p>
+          </div>
 
-        <div class="my-col box">
-          <ion-icon name="chatboxes" class="big-icon"></ion-icon>
-          <h4>Offert</h4>
-          <p>Du får offert mailad</p>
-        </div>
-
-        <div class="my-col box-arrow">
-          <p>></p>
-        </div>
-
-        <div class="my-col box">
-          <ion-icon name="people" class="big-icon"></ion-icon>
-          <h4>Möte</h4>
-          <p>Vi träffas för rådgivning</p>
-        </div>
-
-        <div class="my-col box-arrow">
-          <p>></p>
-        </div>
-
-        <div class="my-col box">
-          <ion-icon name="hammer" class="big-icon"></ion-icon>
-          <h4>Sök bygglov</h4>
-          <p>Skicka ansökan till kommunen</p>
+          <div class="my-col box">
+            <ion-icon name="hammer" class="big-icon"></ion-icon>
+            <h4>4. Sök bygglov</h4>
+            <p>Skicka ansökan till kommunen</p>
+          </div>
         </div>
       </div>
     </header>
