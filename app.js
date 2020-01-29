@@ -10,6 +10,7 @@ document.querySelectorAll(".question-box").forEach(q => {
 });
 
 // Smooth scrolling anchor links
+const navContent = document.getElementById("nav-content");
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", e => {
     e.preventDefault();
@@ -17,8 +18,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const target = document.getElementById(
       anchor.getAttribute("href").replace("#", "")
     );
+    console.log(mainNav.offsetHeight);
     window.scrollTo({
-      top: target.offsetTop - 100,
+      top: target.offsetTop - navContent.offsetHeight,
       behavior: "smooth"
     });
 

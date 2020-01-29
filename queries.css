@@ -9,7 +9,7 @@
     opacity: 0;
     font-size: 0;
     height: 0;
-    margin: 0.5em 30px 0 0;
+    margin-right: 30px;
     text-align: right;
     transition: height 0.4s 0.3s;
   }
@@ -17,14 +17,11 @@
   .main-nav li {
     display: block;
     margin-bottom: 0.5em;
+    margin-right: 0;
   }
 
   .menu-btn {
     display: inline-block;
-  }
-
-  .box {
-    font-size: 3.5vh;
   }
 
   /* FRÅGA OSS */
@@ -92,10 +89,6 @@
     display: none;
   }
 
-  .box {
-    font-size: 3vh;
-  }
-
   /* OM OSS */
 
   .section-om .my-col:first-child {
@@ -157,10 +150,6 @@
   .box-holder {
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .box {
-    font-size: 3vh;
-    width: 40%;
   }
 
   .box-arrow:nth-child(4) {
@@ -253,11 +242,12 @@
   }
 
   .box {
-    font-size: 130%;
+    font-size: 2vh;
+    margin-bottom: 1em;
   }
 
   .box p {
-    font-size: 70%;
+    font-size: 90%;
   }
 
   .big-icon {
@@ -276,7 +266,7 @@
     height: 200vh;
   }
 
-  .box {
+  /* .box {
     font-size: 6vh;
-  }
+  } */
 }
