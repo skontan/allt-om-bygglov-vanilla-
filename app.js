@@ -18,13 +18,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.getAttribute("href").replace("#", "")
     );
     window.scrollTo({
-      top: target.offsetTop - 70,
+      top: target.offsetTop - 100,
       behavior: "smooth"
     });
 
     // If smaller screen then hide menu
     if (mainNav.classList.contains("shown")) {
       mainNav.classList.remove("shown");
+      menuBtn.setAttribute("name", "menu");
     }
   });
 });
@@ -81,9 +82,13 @@ const menuClose = document.getElementById("menu-close");
 const mainNav = document.getElementById("main-nav");
 
 menuBtn.addEventListener("click", () => {
-  mainNav.classList.add("shown");
-});
-
-menuClose.addEventListener("click", () => {
-  mainNav.classList.remove("shown");
+  if (menuShown) {
+    mainNav.classList.remove("shown");
+    menuBtn.setAttribute("name", "menu");
+    menuShown = false;
+  } else {
+    mainNav.classList.add("shown");
+    menuBtn.setAttribute("name", "close");
+    menuShown = true;
+  }
 });
