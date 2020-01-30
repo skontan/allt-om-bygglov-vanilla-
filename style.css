@@ -101,6 +101,9 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("header.jpg");
   background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -185,7 +188,7 @@ header .img-box img {
 }
 
 .logo {
-  height: 50px;
+  height: 100px;
   width: 50px;
   margin-left: 10px;
   transition: all 0.4s 0.3s;
@@ -214,6 +217,8 @@ header .img-box img {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  width: 50%;
+  margin: 0;
 }
 
 .main-nav h2 {
@@ -237,6 +242,7 @@ header .img-box img {
 
 .menu-box {
   height: 100%;
+  margin-top: -100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -249,7 +255,7 @@ header .img-box img {
   color: #fff;
   cursor: pointer;
   display: none;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .main-nav.shown {
@@ -368,7 +374,6 @@ header .img-box img {
 }
 
 .title-info {
-  font-size: 90%;
   width: 70%;
 }
 
@@ -635,7 +640,7 @@ textarea {
 
 footer {
   background-color: #333;
-  padding: 40px;
+  padding: 1em;
   font-size: 85%;
   text-align: center;
   list-style: none;
